@@ -15,6 +15,7 @@ Ini adalah hasil source code dari proyek website ITS.
 - `CSS3`
 - `Javascript`
 - `Bootstrap 5`
+- `Github`
 - `Font Awesome`
 - `Mobile Simulator (Chrome Extension)`
 - `Eye Dropper (Chrome Extension)`
