@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+
+
+.cocial-linked {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 8px;   
+    /* border: 1px solid black; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(41, 130, 225);
+}
+
+.col1 {
+    background-color: rgb(235, 234, 234);
+    color: rgb(41, 130, 225);
+    font-family: 'PT Sans';
+    letter-spacing: 2px;
+}
+
+.col2 {
+    background-color: rgb(235, 234, 234);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: rgb(41, 130, 225);
+    font-family: 'Mulish';
+}
+
+.cocial-linked li a{
+    color: white;
+    margin: 18px;
+    font-size: 100%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.pilih-img {
+    display: block;
+    position: relative;
+    background-color: #2A2E65;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    padding: 18px;
+}
+
+.btn-save {
+    width: 150px;
+    padding: 8px;
+    background-color: #4070f4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-save:hover {
+    background-color: #2A2E65;
+    color: #fff;
+}
+
+.btn-cancel {
+    width: 100px;
+    padding: 8px;
+    background-color: #b8440e;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-cancel:hover {
+    background-color: #2A2E65;
+    color: #fff;
+}
+
+
+.tmb-can {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #bd2c19;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tmb-can:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #2A2E65;
+    font-weight: bold;
+}

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.thumb {
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+body {
+    /* overflow: hidden; */
+}
+
+
+.toaster {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    padding: 20px 35px 20px 25px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    border-left: 6px solid #30b41f;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toaster.active {
+    transform: translateX(0%);
+
+}
+
+.toaster .toast-content {
+    display: flex;
+    align-items: center;
+}
+
+.toast-content .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #30b41f;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.toast-content .msg {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 20px;
+}
+
+.msg .text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.msg .text.text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+.toaster .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toaster .close:hover {
+    opacity: 1;
+}
+
+.toaster .prog {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.toaster .prog::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #30b41f;
+}
+
+.prog.active:before{
+    animation: progress 5s linear forwards;
+}
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+.toaster1 {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    padding: 20px 35px 20px 25px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    border-left: 6px solid #bd2c19;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toaster1.active {
+    transform: translateX(0%);
+
+}
+
+.toaster1 .toast-content1 {
+    display: flex;
+    align-items: center;
+}
+
+.toast-content1 .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #bd2c19;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+
+}
+
+.toast-content1 .msg1 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 0 20px;
+}
+
+.msg1 .text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.msg1 .text.text-1 {
+    font-weight: 600;
+    color: #333;
+}
+
+.toaster1 .close1 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.toaster1 .close1:hover {
+    opacity: 1;
+}
+
+.toaster1 .prog1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.toaster1 .prog1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #bd2c19;
+}
+
+.prog1.active:before{
+    animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+    100% {
+        right: 100%;
+    }
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.pilih-img {
+    display: block;
+    position: relative;
+    background-color: #2A2E65;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    padding: 18px;
+}
+
+
+
+.btn-save {
+    width: 150px;
+    padding: 8px;
+    background-color: #4070f4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-save:hover {
+    background-color: #2A2E65;
+    color: #fff;
+}
+
+.btn-cancel {
+    width: 100px;
+    padding: 8px;
+    background-color: #b8440e;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-cancel:hover {
+    background-color: #2A2E65;
+    color: #fff;
+}
+
+
+.tmb-can {
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: #bd2c19;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tmb-can:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #2A2E65;
+    font-weight: bold;
+}
